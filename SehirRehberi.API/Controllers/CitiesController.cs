@@ -31,6 +31,7 @@ namespace SehirRehberi.API.Controllers
         [Route("add")]
         public ActionResult Add([FromBody]City city)
         {
+            //test 
             _appRepository.Add(city);
             _appRepository.SaveAll();
             return Ok(city);
